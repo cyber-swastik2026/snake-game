@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Snake Quest - Colorful Snake Game</title>
+<meta name="description" content="A colorful Snake game with 16 modes, themes, speeds and board sizes. Play free in your browser.">
+<meta property="og:title" content="Snake Quest"><meta property="og:description" content="Colorful Snake game with 16 modes.">
+<link rel="icon" href="assets/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<aside id="side"><button id="bSide"><b>›</b><span>Menu</span></button><button id="bInfo"><b>i</b><span>About</span></button></aside>
+<div id="app">
+<header id="top"><div id="score"><span id="sfruit">🍎</span><b id="sval">0</b></div>
+<div class="tb"><button id="bDp" title="D-pad">🎮</button><button id="bHelp" title="Help">?</button><button id="bSet" title="Settings">⚙</button><button id="bFs" title="Fullscreen">⛶</button><button id="bSnd" title="Sound">🔊</button></div></header>
+<main id="stage"><canvas id="cv"></canvas><div id="card" hidden></div></main>
+<div id="dpad"><button data-d="0" style="grid-area:u">▲</button><button data-d="3" style="grid-area:l">◀</button><button data-d="2" style="grid-area:d">▼</button><button data-d="1" style="grid-area:r">▶</button></div>
+<nav id="modes"></nav></div>
+<div id="modal" hidden><div class="panel"><div id="mbody"></div><div class="btns"><button id="mclose" class="green big">Got it</button></div></div></div>
+<script type="module" src="js/main.js"></script></body></html>
